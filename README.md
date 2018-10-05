@@ -4,6 +4,14 @@ Video
 ----
 https://www.youtube.com/watch?v=pbGeVK-KAEE
 
+APK
+----
+jiayue-FeelsBook/jiayue-feelsbook/build/outputs/apk/debug/
+
+UML
+----
+
+
 References
 ----
 Recyelerview
