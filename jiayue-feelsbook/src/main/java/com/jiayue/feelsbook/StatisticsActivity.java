@@ -63,7 +63,7 @@ public class StatisticsActivity extends AppCompatActivity implements View.OnClic
     }
 
     /**
-     * show back image,mood and number
+     * views of back image,mood and number
      *
      */
     private void initViews() {
@@ -82,7 +82,11 @@ public class StatisticsActivity extends AppCompatActivity implements View.OnClic
             textViewList.add(number);
         }
     }
-
+    
+    /**
+     * click the back image,activity end.
+     *
+     */
 
     @Override
     public void onClick(View v) {
