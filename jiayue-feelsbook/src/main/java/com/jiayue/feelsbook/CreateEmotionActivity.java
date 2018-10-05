@@ -59,10 +59,6 @@ public class CreateEmotionActivity extends AppCompatActivity implements TimePick
     private List<RadioButton> buttons;
     private int which = -1;
 
-    /**
-     * Create or edit a emotion
-     */
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,7 +75,7 @@ public class CreateEmotionActivity extends AppCompatActivity implements TimePick
     }
 
     /**
-     * Create or edit button and back image
+     * views of Create button, edit button and back image
      */
 
     private void initViews() {
@@ -99,7 +95,8 @@ public class CreateEmotionActivity extends AppCompatActivity implements TimePick
         TIME = findViewById(R.id.time);
         TEXT = findViewById(R.id.comment);
         flexboxLayout = findViewById(R.id.select_mood);
-
+        
+        //date
         DATE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -112,6 +109,8 @@ public class CreateEmotionActivity extends AppCompatActivity implements TimePick
                 dpd.show(getFragmentManager(), "tag");
             }
         });
+        
+        //time
         TIME.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -147,7 +146,8 @@ public class CreateEmotionActivity extends AppCompatActivity implements TimePick
                 e.printStackTrace();
             }
         }
-
+        
+        
         DATE.setText(new SimpleDateFormat("yyyy-MM-dd").format(calendar.getTime()));
         TIME.setText(new SimpleDateFormat("HH:mm:ss").format(calendar.getTime()));
 
@@ -176,13 +176,17 @@ public class CreateEmotionActivity extends AppCompatActivity implements TimePick
             buttons.add(radioButton);
         }
     }
-
+    
+    /**
+     * set Create box: emotions,time and text
+     */
+    
     private void create() {
         if (which < 0) {
             Toast.makeText(this, getResources().getText(R.string.add_emotion_hint_1), Toast.LENGTH_SHORT).show();
             return;
         }
-
+        
         String emotionName = Config.strEMOTION[which];
         SimpleDateFormat sdf = new SimpleDateFormat(Config.strDATE);
         String date = sdf.format(calendar.getTime());
@@ -203,7 +207,7 @@ public class CreateEmotionActivity extends AppCompatActivity implements TimePick
         finish();
     }
 
-
+  
     private View.OnClickListener push = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
