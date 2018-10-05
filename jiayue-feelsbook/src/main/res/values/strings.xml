@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">jiayue-FeelsBook</string>
+    <string name="create">Create</string>
+    <string name="statistics">Statistics</string>
+    <string name="operation">Operation</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="add_emotion_hint_1">Please select emotion type</string>
+    <string name="add_emotion_hint_2">Add an optional comment</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_emoion_hint">Do you confirm delete this emotion?</string>
+</resources>

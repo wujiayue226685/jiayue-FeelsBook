@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingBottom="2dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/moods"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#E8E8E8"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textColor="#696969"
+        android:textSize="15sp"
+        tools:text="Happy" />
+
+    <TextView
+        android:id="@+id/numbers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#F8F8FF"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        tools:text="100" />
+
+</LinearLayout>
